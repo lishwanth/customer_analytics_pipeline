@@ -1,0 +1,22 @@
+
+<template>
+    <description>Customer Analytics Data Ingestion Template</description>
+    <group name="Customer Analytics">
+        <processGroups>
+            <processGroup name="Data Ingestion">
+                <processors>
+                    <processor name="GetFile">
+                        <config>
+                            <property name="Input Directory">/data/raw/telco_churn/</property>
+                        </config>
+                    </processor>
+                    <processor name="PutFile">
+                        <config>
+                            <property name="Output Directory">/data/processed/telco_churn/</property>
+                        </config>
+                    </processor>
+                </processors>
+            </processGroup>
+        </processGroups>
+    </group>
+</template>
